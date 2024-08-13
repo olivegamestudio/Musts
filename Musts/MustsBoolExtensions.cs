@@ -1,6 +1,6 @@
 ﻿namespace Musts;
 
-public static class Musts
+public static class MustsBoolExtensions
 {
     public static void MustBeTrue(this bool value)
     {
