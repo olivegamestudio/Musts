@@ -11,6 +11,18 @@ public class MustsIntTests
     }
 
     [Test]
+    public void TestNumberIsEquals()
+    {
+        0.MustBeEqual(0);
+    }
+
+    [Test]
+    public void TestNumberIsNotEquals()
+    {
+        0.MustBeNotEqual(1);
+    }
+
+    [Test]
     public void Test1IsGreaterThanZero()
     {
         1.MustBeGreaterThanZero();

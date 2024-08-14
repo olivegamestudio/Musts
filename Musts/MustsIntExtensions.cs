@@ -10,6 +10,22 @@ public static class MustsIntExtensions
         }
     }
 
+    public static void MustBeEqual(this int value, int compare)
+    {
+        if (value != compare)
+        {
+            throw new MustsException();
+        }
+    }
+
+    public static void MustBeNotEqual(this int value, int compare)
+    {
+        if (value == compare)
+        {
+            throw new MustsException();
+        }
+    }
+
     public static void MustBeGreaterThanZero(this int value)
     {
         if (value <= 0)
