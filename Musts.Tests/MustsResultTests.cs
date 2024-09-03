@@ -13,6 +13,6 @@ public class MustsResultTests
     [Test]
     public void TestFailureIsFailure()
     {
-        Result.Fail("Failed").MustBeFailure();
+        ErrorResult.Fail("Failed").MustBeFailure();
     }
 }
